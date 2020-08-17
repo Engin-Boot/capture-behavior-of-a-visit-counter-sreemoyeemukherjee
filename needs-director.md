@@ -3,7 +3,7 @@
 Scenario: Show patient visits during working days and holidays
 
   Given a new unique visitor tag has been assigned to every
-  patient by the hospital 
+  patient by the hospital
   When we encounter unique active vistor tag IDs
   Then each such unique IDs add one to the visit-counter
   
