@@ -4,7 +4,7 @@ Scenario: Show patient visits during working days and holidays
 
   Given a new unique visitor tag has been assigned to every
   patient by the hospital
-  When we encounter unique active vistor tag IDs
+  When we encounter unique active visitor tag IDs
   Then each such unique IDs add one to the visit-counter
   
 Scenario: Compute parking slots to reserve for visiting specialists
