@@ -2,12 +2,13 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given
-  When
-  Then
+  Given there is a camera at every entry gate
+  When camera detects a person entering and exiting
+  Then increase and decrease the counts respectively
 
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+  Given each seating capacity is monitored
+  When the capacity is full
+  Then display an alert message at the entrance gate
+  stating "Seating capacity is full"
