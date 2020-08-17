@@ -2,10 +2,11 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given each new visitor tag has been assigned to a patient
-  whenever a patient enters the hospital and recorded when
+  Given a new visitor tag is assigned to a patient by the
+  hospital whenever a patient enters the hospital and retracted when
   the patient exits
-  When a unique ID has been assigned to a patient
+  When a unique ID has been assigned to a patient by the 
+  receptionist
   Then each such unique IDs add one to the visit-counter
 
 Scenario: Compute parking slots to reserve for visiting specialists

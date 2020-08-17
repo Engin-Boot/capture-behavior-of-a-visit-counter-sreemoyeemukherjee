@@ -9,7 +9,7 @@ Scenario: Report visitor trends during a week of operation
 Scenario: Alert when seating capacity is full
 
   Given each seating capacity is being monitored
-  constantly in real-time
+  constantly in real-time by cameras
   When the capacity is full
   Then display an alert message at the entrance gate
   stating "Seating capacity is full"
